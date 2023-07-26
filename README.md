@@ -1,6 +1,6 @@
 # Tic-Tac-Toe_with_React
 
-Creating a simple tic-tac-toe game with react and babel.
+Built a simple tic-tac-toe game with HTML, CSS, React JS and babel.
 
 ## [Demo](https://nandhinikarvendhan.github.io/Tic-Tac-Toe_with_React/)
 
@@ -8,13 +8,13 @@ Creating a simple tic-tac-toe game with react and babel.
 
 To get started with this project, please:
 
-1. Download or clone repo's files
-2. Start a local server
-3. Open index.html
+1. Download or clone repo's files.
+2. Start a local server.
+3. Open index.html.
 
 ## Roadmap of future improvements
 
-1. I would like to prevent players to set a button already played.
+1. I would like to prevent players to set a button that is already played.
 2. Online Gaming.
 
 ## License information
