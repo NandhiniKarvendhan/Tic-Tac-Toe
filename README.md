@@ -4,6 +4,10 @@ Built a simple tic-tac-toe game with HTML, CSS, React JS and babel.
 
 ## [Demo](https://nandhinikarvendhan.github.io/Tic-Tac-Toe_with_React/)
 
+## Screenshot
+
+![](./assets/img/Screenshot.png)
+
 ## How to run
 
 To get started with this project, please:
