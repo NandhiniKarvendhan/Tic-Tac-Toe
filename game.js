@@ -27,7 +27,7 @@ const Board = () => {
   const [player, setPlayer] = React.useState(1);
   const [gameState, setGameState] = React.useState([]);
   // check for winner (see superset.js)
-  let status = `Winner is ${checkForWinner(gameState)}`;
+  let status = `${checkForWinner(gameState)}`;
   // console.log(`We hava a winner ${status}`);
 
   const takeTurn = (id) => {
@@ -45,6 +45,7 @@ const Board = () => {
     } else {
       return "Player O";
     }
+    // player ? "Player X" : "Player 0";
   }
 
   return (
