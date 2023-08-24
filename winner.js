@@ -16,7 +16,7 @@ const win = [
 const checkForWinner = (gameState) => {
   // get array of box id's
   // can't be a winner in less than 5 turns
-  if (gameState.length < 5) return "No Winner Yet";
+  if (gameState.length < 5) return "";
   let p0 = gameState.filter((item) => {
     if (item.player == 0) return item;
   });
@@ -33,9 +33,9 @@ const checkForWinner = (gameState) => {
       return isSuperset(new Set(px), new Set(item));
     });
   }
-  if (win0.length > 0) return "Player O ";
-  else if (winX.length > 0) return "Player X ";
-  return "No Winner Yet";
+  if (win0.length > 0) return "Winner is Player O ";
+  else if (winX.length > 0) return "Winner is X ";
+  return "";
 };
 // check if subset is in the set
 function isSuperset(set, subset) {
