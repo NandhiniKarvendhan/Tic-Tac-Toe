@@ -33,8 +33,9 @@ const checkForWinner = (gameState) => {
       return isSuperset(new Set(px), new Set(item));
     });
   }
-  if (win0.length > 0) return "Winner is Player O ";
-  else if (winX.length > 0) return "Winner is X ";
+  if (win0.length > 0) {
+    return "Winner is Player O ";
+  } else if (winX.length > 0) return "Winner is X ";
   return "";
 };
 // check if subset is in the set
