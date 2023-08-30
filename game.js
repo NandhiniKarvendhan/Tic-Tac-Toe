@@ -6,6 +6,7 @@ const Square = ({ takeTurn, id }) => {
   // We call takeTurn to tell Parent we have filled the square
   const [filled, setFilled] = React.useState(false);
   const [tik, setTik] = React.useState(2);
+  const [disable, setDisable] = React.useState(false);
 
   return (
     <button
@@ -13,8 +14,10 @@ const Square = ({ takeTurn, id }) => {
       onClick={() => {
         setTik(takeTurn(id));
         setFilled(true);
+        setDisable(true);
         console.log(`Square: ${id} filled by player : ${tik}`);
       }}
+      disabled={disable}
     >
       <h1>{mark[tik]}</h1>
     </button>
@@ -68,6 +71,16 @@ const Board = () => {
       <div id="info">
         <h1 id="turn">Next Player: {playerName(player)}</h1>
         <h1>{status}</h1>
+        <h1>
+          <button
+            className="restart-btn"
+            onClick={() => {
+              console.log("Game Restarted");
+            }}
+          >
+            Restart
+          </button>
+        </h1>
       </div>
     </div>
   );
