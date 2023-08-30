@@ -28,11 +28,19 @@ button {
 }
 .red {
   background-color: rgb(231, 109, 109);
-}
-
-.white {
   color: white;
+}
+.white {
+  color: whitesmoke;
 }
 h1 {
   text-align: center;
 }
+/* .restart-btn {
+  border-radius: 4px;
+  border: none;
+  background-color: whitesmoke;
+  padding: 10px;
+  font-size: large;
+  font-weight: 600;
+} */
