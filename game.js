@@ -48,7 +48,6 @@ const Board = () => {
     } else {
       return "Player O";
     }
-    // player ? "Player X" : "Player 0";
   }
 
   return (
