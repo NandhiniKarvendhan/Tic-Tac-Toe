@@ -75,7 +75,7 @@ const Board = () => {
           <button
             className="restart-btn"
             onClick={() => {
-              console.log("Game Restarted");
+              window.location.reload();
             }}
           >
             Restart
