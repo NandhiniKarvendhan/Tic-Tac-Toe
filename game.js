@@ -1,4 +1,4 @@
-const Square = ({ takeTurn, id }) => {
+const Square = ({ takeTurn, id, status }) => {
   const mark = ["O", "X", "+"];
   // id is the square's number
   // filled tells us if square has been filled
@@ -40,7 +40,7 @@ const Board = () => {
   };
   function renderSquare(i) {
     // use properties to pass callback function takeTurn to Child
-    return <Square takeTurn={takeTurn} id={i}></Square>;
+    return <Square takeTurn={takeTurn} id={i} status={status}></Square>;
   }
   function playerName(player) {
     if (player == 1) {
