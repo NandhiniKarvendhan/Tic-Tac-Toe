@@ -50,8 +50,14 @@ const Board = () => {
     }
   }
   function disableBtn(status) {
-    if (status != "")
-      document.getElementById("gameArea").classList.add("disablebutton");
+    if (status != "") {
+      document.getElementById("turn").innerHTML = "";
+      document.getElementById("status").classList.add("status");
+      var btnn = document
+        .getElementById("gameArea")
+        .classList.add("disablebutton");
+      return btnn;
+    }
   }
   return (
     <div className="game-board">
@@ -74,7 +80,7 @@ const Board = () => {
       </div>
       <div id="info">
         <h1 id="turn">Next Player: {playerName(player)}</h1>
-        <h1>
+        <h1 id="status">
           {status}
           {disableBtn(status)}
         </h1>
