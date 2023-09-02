@@ -44,3 +44,7 @@ h1 {
   font-size: large;
   font-weight: 600;
 }
+.disablebutton {
+  pointer-events: none;
+  opacity: 0.9;
+}
