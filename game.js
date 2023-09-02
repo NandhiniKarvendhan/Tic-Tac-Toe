@@ -49,27 +49,35 @@ const Board = () => {
       return "Player O";
     }
   }
-
+  function disableBtn(status) {
+    if (status != "")
+      document.getElementById("gameArea").classList.add("disablebutton");
+  }
   return (
     <div className="game-board">
-      <div className="grid-row">
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
-      </div>
-      <div className="grid-row">
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
-      </div>
-      <div className="grid-row">
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
+      <div id="gameArea">
+        <div className="grid-row">
+          {renderSquare(0)}
+          {renderSquare(1)}
+          {renderSquare(2)}
+        </div>
+        <div className="grid-row">
+          {renderSquare(3)}
+          {renderSquare(4)}
+          {renderSquare(5)}
+        </div>
+        <div className="grid-row">
+          {renderSquare(6)}
+          {renderSquare(7)}
+          {renderSquare(8)}
+        </div>
       </div>
       <div id="info">
         <h1 id="turn">Next Player: {playerName(player)}</h1>
-        <h1>{status}</h1>
+        <h1>
+          {status}
+          {disableBtn(status)}
+        </h1>
         <h1>
           <button
             className="restart-btn"
