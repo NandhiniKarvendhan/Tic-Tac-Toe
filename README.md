@@ -18,7 +18,7 @@ To get started with this project, please:
 
 ## Roadmap of future improvements
 
-1. I would like to prevent players to set a button that is already played.
+1. I would prevent gamers from defining a button after the game is won.
 
 ## License information
 
