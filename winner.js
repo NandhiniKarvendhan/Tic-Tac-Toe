@@ -18,24 +18,32 @@ const checkForWinner = (gameState) => {
   // can't be a winner in less than 5 turns
   if (gameState.length < 5) return "";
   let p0 = gameState.filter((item) => {
-    if (item.player == 0) return item;
+    if (item.player == 0) {
+      console.log(item);
+      return item;
+    }
   });
+
   p0 = p0.map((item) => item.id);
+
   let px = gameState.filter((item) => {
     if (item.player == 1) return item;
   });
   px = px.map((item) => item.id);
+
   if (p0 != null && px != null) {
     var win0 = win.filter((item) => {
       return isSuperset(new Set(p0), new Set(item));
     });
+
     var winX = win.filter((item) => {
       return isSuperset(new Set(px), new Set(item));
     });
   }
   if (win0.length > 0) {
+    console.log(win0);
     return "Winner is Player O ";
-  } else if (winX.length > 0) return "Winner is X ";
+  } else if (winX.length > 0) return "Winner is Player X ";
   return "";
 };
 // check if subset is in the set
