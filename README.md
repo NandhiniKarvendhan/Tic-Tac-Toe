@@ -14,7 +14,7 @@ To get started with this project, please:
 
 1. Download or clone repo's files.
 2. Start a local server.
-3. Open index.html.
+3. Open index.html to play the game.
 
 ## Roadmap of future improvements
 
